@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE = edge">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Decodificador</title>
+    <link rel="icon" type="image/x-icon" href="/assets/codigos.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="aba">
+        <nav class="aba__menu">
+            <a class="aba__menu__botao" href="about.html" target="_blank">Como funciona?</a>
+        </nav>
+    </header>
+    <main class="introducao">
+        <section class="introducao__regras">
+            <div class="corpo__texto">
+                <h1 class="introducao__regras__titulo">Decodificador</h1>
+                <h3 class="introducao__regras__subtitulo">Como funciona?  </h3>
+                <p class="introducao__regras__texto">  Esta é uma aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que<a class="atalho" href="about.html">...</a></p>
+            </div>
+        <div class="text__box"> 
+            <textarea id="digitar"  placeholder="Digite seu texto aqui"></textarea>
+            <div class="copy__buttom">
+                <textarea id="resultado"  placeholder="Seu texto aparecera aqui" disabled></textarea>
+                <span class="input-group-btn">
+                    <button onclick="copiar()" id="botao__copiar__estilo"class="bi bi-copy" type="button"></button>
+                </span>
+            </div>
+        </div>
+        <div class="botoes__acao">
+            <button onclick="criptografar()" class="criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="descriptografar">descriptografar</button>
+        </div>
+    </section>
+     
+    </main>
+    <footer class="rodape"> 
+        <div class="text__rodape">
+        <p>Desenvolvido por: Fabricio Pontes</p>
+        </div>
+        <div class="rodape__icons">
+            <nav class="icons__menu">
+                <a id="linkedin__botao"class="bi bi-linkedin" href="https://www.linkedin.com/in/fabricio-pontes-tech/" target="_blank"></a>
+                <a id="github__botao" class="bi bi-github" href="https://github.com/Fabponts" target="_blank"></a>
+            </nav>
+        </div>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

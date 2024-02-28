@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sixtyfour&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+ :root{
+    --cor-principal:#ffffff;
+    --fonte-principal:"Sixtyfour", sans-serif;
+    --cor-secundario:#008000;
+    --cor-terciaria:#000;
+    --cor-quarternaria:transparent;
+    --cor-botao:#0000ff;
+    --cor-hover-butao:#808080;
+ }
+
+body { background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9e54fcef-c565-4039-9963-cf31a5e41081/dbdhoju-2953e0d9-f588-4611-8856-a1669bd066b1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzllNTRmY2VmLWM1NjUtNDAzOS05OTYzLWNmMzFhNWU0MTA4MVwvZGJkaG9qdS0yOTUzZTBkOS1mNTg4LTQ2MTEtODg1Ni1hMTY2OWJkMDY2YjEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3hgwwWzoZ5RgLneM7X0eDRl73-3sLDci6mEnVKHe9sY'); background-repeat:repeat;
+   color:var(--cor-principal);
+   min-height: 100vh;
+   
+}
+.aba{
+    padding:2% 5% 0 17%;
+}
+.aba__menu{
+    display:flex;
+    justify-content: flex-end;
+    gap:7.5rem;
+}
+.aba__menu__botao{
+    font-size:1.25rem;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+.aba__menu__botao:hover{
+    color:var(--cor-secundario);
+    transition-duration:0.3s ;
+}
+.introducao{
+    margin: 6% 17%;
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+.introducao__regras__titulo{
+    font-size:3rem;
+    font-family:var(--fonte-principal);
+    padding-bottom: 1.25rem;
+}
+.introducao__regras__subtitulo{
+    font-size:1.5rem;
+    font-family: var(--fonte-principal);
+    padding-bottom:1.5rem;
+}
+.atalho{
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+.atalho:hover{
+    color:var(--cor-hover-butao);
+    transition:0.3s;
+}
+.introducao__regras__texto{
+    font-size:1rem;
+    font-family: var(--fonte-principal);
+    padding-bottom:1.25rem;
+}
+.text__box{
+    display: flex;
+    justify-content: space-around;
+}
+#digitar{
+    height:25rem;
+    width:25rem;
+    color: var(--cor-principal);
+    resize:none;
+    border-radius: 1.25rem;
+    border:0.25rem solid var(--cor-secundario);
+    outline: none;
+    background-color: var( --cor-terciaria);
+    padding: 1rem;
+    font-family: var(--fonte-principal);
+    
+    
+}
+#resultado{
+    height:25rem;
+    width:25rem;
+    color: var(--cor-principal);
+    resize:none;
+    border-radius: 1.25rem;
+    border:0.25rem solid var(--cor-secundario);
+    outline: none;
+    background-color: var( --cor-terciaria);
+    padding: 1rem;
+    font-family: var(--fonte-principal);
+}
+#botao__copiar__estilo{
+    background-color: var(--cor-quarternaria);
+    border: var(--cor-quarternaria);
+    color: var(--cor-secundario);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+    
+.botoes__acao{
+    display: flex;
+    justify-content: space-around;
+    padding-top:1.25rem;
+    
+}
+.criptografar{
+    background-color:var(--cor-quarternaria);
+    color:var(--cor-principal);
+    padding: 0.25rem 0.5rem,;
+    font-family:"Merriweather", serif; ;
+    font-weight: 900;
+    border: 0.25rem solid ;
+    cursor:pointer;
+    font-size: 1rem;
+}
+.descriptografar{
+    background-color:var(--cor-quarternaria);
+    color:var(--cor-principal);
+    padding: 0.25rem 0.50rem;
+    font-family:"Merriweather", serif; ;
+    font-weight: 900;
+    border: 0.25rem solid ;
+    cursor:pointer;
+    font-size: 1rem;
+}
+.descriptografar:hover{
+    background-color:var(--cor-hover-butao);
+    transition-duration:0.3s;
+}
+.criptografar:hover{
+    background-color:var(--cor-hover-butao);
+    transition-duration:0.3s;
+    
+}
+.text__rodape{
+    display:flex;
+    justify-content: center;
+    margin-bottom:1rem;
+    font-family: var(--fonte-principal);
+}
+
+.rodape__icons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:1rem;
+}
+.icons__menu{
+    display: flex;
+    gap:2rem;
+}
+#linkedin__botao{
+    font-size:1.5rem;
+    color:var(--cor-principal);
+}
+#github__botao{
+    font-size:1.5rem;
+    color:var(--cor-principal);
+}
+#github__botao:hover{
+    color: var(--cor-hover-butao);
+    transition:0.4s;
+}
+#linkedin__botao:hover{
+    color: var(--cor-hover-butao);
+    transition:0.4s;
+}
+
+@media(max-width:975px){
+    .aba__menu__botao{
+        margin-top:16px;
+    }
+    .atalho{
+        color: var(--cor-secundario);
+    }
+    .text__box{
+        width:300px;
+        gap:30px;
+        flex-direction: column;
+        padding:15%;
+    }
+    #resultado{
+        height: 100px;
+    }
+    .botoes__acao{
+        padding:10%;
+        flex-direction: column;
+        gap:20px;
+        width:50%px;
+       
+    }
+}
+@media(max-width:650px){
+   .introducao__regras__titulo{
+    font-size: 40px;
+    width: 50%;
+   }
+   .atalho{
+    color: var(--cor-secundario);
+}
+   .text__box{
+    width:200px;
+    height:200px;
+    padding: 10%;
+}
+.botoes__acao{
+    padding-top: 10%;
+}
+.rodape{
+    justify-content: center;
+}
+}
+@media(max-width:530px){
+    .aba__menu__botao{
+        font-size: 15px;
+    }
+    .introducao{
+        margin: 5%;
+    }
+    .introducao__regras__titulo{
+        font-size:30px;
+        
+    }
+    .introducao__regras__subtitulo{
+        font-size:17px;
+    }
+    .atalho{
+        color: var(--cor-secundario);
+    }
+    .text__box{
+        padding:8%;
+        margin-top:20px;
+        ;
+    }
+    #digitar{
+        width:300px;
+    }
+    #resultado{
+        width: 300px;
+    }
+    .botoes__acao{
+        padding-top:20%;
+    }
+    .rodape{
+        justify-content: center;
+        padding-top:10%;
+    }
+    .text__rodape{
+        font-size: 12px;
+        
+    }
+}
+@media(max-width:400px){
+    .aba__menu__botao{
+        font-size:14px;
+    }
+    .introducao__regras__titulo{
+        font-size:25px;
+    }
+    .introducao__regras__texto{
+        font-size:13px;
+    }
+    .atalho{
+        color: var(--cor-secundario);
+    }
+    .text__box{
+        padding: 8%;
+    }
+    #digitar{
+        width:250px;
+    }
+    #resultado{
+        width:250px;
+    }
+    .text__rodape{
+        font-size: 10px;
+    }
+}
